@@ -19,13 +19,13 @@
                     <a class="navi-logo link" href="./index.html"><span class="navi-logo-2">Web</span>Studio</a>
                     <ul class="header-list list">
                         <li class="header-item">
-                            <a class="header-link link current" href="./index.html">Studio</a>
+                            <a href="./index.html" class="header-link link current">Studio</a>
                         </li>
                         <li class="header-item">
-                            <a class="header-link link" href="./portfolio.html">Portfolio</a>
+                            <a href="./portfolio.html" class="header-link link">Portfolio</a>
                         </li>
                         <li class="header-item">
-                            <a class="header-link link" href="">Contacts</a>
+                            <a href="" class="header-link link">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -50,7 +50,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-button" type="button">Order Service</button>
+                <button class="hero-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -377,5 +377,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button type="button"  class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-btn-icon"width="8" height="8">
+                    <use href="./images/sprite.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
